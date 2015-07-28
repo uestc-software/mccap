@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>EntryWidget</class>
+ <widget class="QWidget" name="EntryWidget">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>900</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Entry</string>
+  </property>
+  <widget class="QWidget" name="gridLayoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>901</width>
+     <height>601</height>
+    </rect>
+   </property>
+   <layout class="QGridLayout" name="wrapperLayout" rowstretch="1,10,1">
+    <item row="2" column="0">
+     <layout class="QGridLayout" name="footLayout" columnstretch="6"/>
+    </item>
+    <item row="0" column="0">
+     <layout class="QGridLayout" name="headLayout"/>
+    </item>
+    <item row="1" column="0">
+     <layout class="QGridLayout" name="bodyLayout" rowstretch="0" columnstretch="6,6">
+      <item row="0" column="1">
+       <layout class="QGridLayout" name="rightBarLayout" rowstretch="8,4">
+        <item row="0" column="0">
+         <widget class="QListWidget" name="organismSelected"/>
+        </item>
+        <item row="1" column="0">
+         <layout class="QGridLayout" name="boardLayout" rowstretch="1,2,0">
+          <item row="1" column="0">
+           <widget class="QGroupBox" name="option2">
+            <property name="title">
+             <string>Option</string>
+            </property>
+            <widget class="QRadioButton" name="radio4">
+             <property name="geometry">
+              <rect>
+               <x>40</x>
+               <y>30</y>
+               <width>351</width>
+               <height>21</height>
+              </rect>
+             </property>
+             <property name="text">
+              <string>Generate pathway or module with whole gene</string>
+             </property>
+            </widget>
+            <widget class="QRadioButton" name="radio5">
+             <property name="geometry">
+              <rect>
+               <x>40</x>
+               <y>60</y>
+               <width>361</width>
+               <height>21</height>
+              </rect>
+             </property>
+             <property name="text">
+              <string>Generate pathway or module with metabolic gene only</string>
+             </property>
+            </widget>
+           </widget>
+          </item>
+          <item row="0" column="0">
+           <widget class="QGroupBox" name="option1">
+            <property name="title">
+             <string>Result type</string>
+            </property>
+            <widget class="QRadioButton" name="radio1">
+             <property name="geometry">
+              <rect>
+               <x>40</x>
+               <y>20</y>
+               <width>89</width>
+               <height>21</height>
+              </rect>
+             </property>
+             <property name="text">
+              <string>Cluster list</string>
+             </property>
+            </widget>
+            <widget class="QRadioButton" name="radio2">
+             <property name="geometry">
+              <rect>
+               <x>190</x>
+               <y>20</y>
+               <width>89</width>
+               <height>21</height>
+              </rect>
+             </property>
+             <property name="text">
+              <string>Pathway</string>
+             </property>
+            </widget>
+            <widget class="QRadioButton" name="radio3">
+             <property name="geometry">
+              <rect>
+               <x>310</x>
+               <y>20</y>
+               <width>89</width>
+               <height>21</height>
+              </rect>
+             </property>
+             <property name="text">
+              <string>Module</string>
+             </property>
+            </widget>
+           </widget>
+          </item>
+          <item row="2" column="0">
+           <widget class="QPushButton" name="submit">
+            <property name="text">
+             <string>Go</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </item>
+      <item row="0" column="0">
+       <layout class="QGridLayout" name="LeftBarLayout">
+        <item row="0" column="0">
+         <widget class="QListWidget" name="organismSelect">
+          <item>
+           <property name="text">
+            <string>1</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>1</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>2</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>2</string>
+           </property>
+          </item>
+         </widget>
+        </item>
+       </layout>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
